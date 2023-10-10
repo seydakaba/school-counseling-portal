@@ -1,0 +1,489 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+
+
+.login-signup{
+    display: flex;
+    align-items:center ;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+.wrapper{
+    align-items: center;
+    width: 420px;
+    top: 50%;
+    left: 50%;
+    background: #34495e;
+    color: white;
+    padding: 30px 40px;
+    border-radius: 40px;
+}
+
+.wrapper h1{
+    text-align: center;
+}
+
+.wrapper .input-box{
+    position: relative;
+    width: 100%;
+    height: 50px;
+    margin: 30px 0;
+}
+
+.input-box input{
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    border-radius: 40px;
+    border: 1px solid rgba(255, 255, 255, 2);
+    outline: none;
+    color: white;
+    padding:20px 45px 20px 20px;
+    font-size: 15px;
+}
+
+.input-box input::placeholder{
+    color: white;
+    font-size: 15px;
+}
+
+.input-box i{
+    position: absolute;
+    top: 50%;
+    right: 20px;
+    color: white;
+    font-size: 20px;
+    transform: translateY(-50%);
+}
+
+.wrapper .remember-me{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: -15px 0 15px;
+    font-size: 14px;
+}
+
+.remember-me a{
+    color: white;
+    text-decoration: none;
+}
+
+.remember-me a:hover{
+    text-decoration: underline;
+}
+
+.wrapper .btn{
+    width: 100%;
+    height: 45px;
+    border-radius: 40px;
+    border: none;
+    outline: none;
+    background: white;
+    color: #34495e;
+    font-size: 16px;
+    cursor: pointer;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.wrapper .register-link{
+    text-align: center;
+    margin-top: 20px;
+    font-size: 14px;
+}
+
+.register-link p a {
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.register-link p a:hover{
+    text-decoration: underline;
+}
+
+.header{
+    position: absolute;
+    width: 95%;
+    padding: 40px 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #34495e;
+    color: white;
+    height: 50px;
+    border-radius: 40px;
+    margin-top: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    height: 50px;
+    
+} 
+
+.navbar-menu{
+    display: flex;
+    align-items: center;
+
+}
+
+.navbar-elements{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.navbar-elements ul{
+    list-style: none;
+    
+
+}
+
+.navbar-elements ul li{
+    display: inline-block;
+    position: relative;
+    margin-left: 5px;
+}
+
+.navbar-elements ul li a{
+    display: block;
+    padding: 20px 25px;
+    text-decoration: none;
+    text-align: center;
+    font-size: 16px;
+    color: white;
+}
+
+.navbar-elements ul li ul.dropdown li{
+    left: 50%;
+    transform: translateX(-50%);
+    display: block;
+    background: #34495e;
+    border-radius: 40px;
+    width: 165%;
+    
+    
+}
+
+
+
+.navbar-elements ul li ul.dropdown{
+    width: 100%;
+    position: absolute;
+    z-index: 999;
+    display: none;
+    
+}
+
+ul li a.hover{
+    background: white;
+    color: #34495e;  
+}
+
+.navbar-elements ul li:hover ul.dropdown{
+    display: block;
+    
+    
+} 
+
+
+.search-form {
+    display: flex;
+    align-items: center;
+}
+
+.search-box-container {
+    background-color: white;
+    border-radius: 40px;
+    display: flex;
+    align-items: center;
+}
+
+.search-form input {
+    outline: none;
+    border: none;
+    border-radius: 40px;
+    padding: 10px;
+    width: 70px;
+    font-size: 16px;
+}
+
+.search-form button {
+    background-color: white;
+    color: #34495e;
+    border: none;
+    border-radius: 40px;
+    padding: 10px 15px;
+    margin-left: 10px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s;
+}
+
+.search-form button:hover {
+    background-color: #f1f1f1;
+}
+
+.search-form i {
+    font-size: 24px;
+}
+
+
+.container{
+    align-items: center;
+    width: 60%;
+    top: 50%;
+    left: 50%;
+    background: #34495e;
+    color: white;
+    padding: 30px 40px;
+    border-radius: 40px;
+}
+
+.alert-danger{
+    background-color: #f44336;
+    color: white;
+    padding: 10px;
+    width: 100%;
+    border-radius: 5px;
+    margin: 10px 0;
+}
+
+
+.navbar{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 40px 100px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #34495e;
+    color: white;
+    height: 75px;
+    font-size: 25px;
+}
+
+.navbar ul li{
+    list-style: none;
+    display: inline-block;
+    margin: 0 20px;
+    position: relative;
+    cursor: pointer;
+}
+
+.logout-box i{
+    font-size: 24px;
+    color: white;
+    margin-left: 30px;
+}
+
+.container-row{
+    position: relative; /* İçeriği sayfanın altına taşımak için position'ı relative olarak ayarladık */
+    top: 100px;
+    display: flex;
+    align-items: center;
+
+}
+
+.child{
+    flex: 1;
+    margin-top:30px;
+    margin-left: 60px;
+    margin-right: 60px;
+
+}
+
+
+.teacher-container{
+    
+    text-align: center;
+
+}
+
+.teacher-list{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 30px;
+    align-items: center;
+
+}
+
+.teacher-list a{
+    text-decoration: none;
+    color: white;
+    margin: 10px;
+    padding: 10px;
+    border-radius: 40px;
+    background: #34495e;
+    transition: background-color 0.3s;
+}
+
+.teacher-list .list-name:hover{
+    color: #a2a7ac;
+}
+
+.teacher-list .list-btn{
+    display: inline-block;
+    padding: 12px 24px;
+    font-size: 16px;
+    background-color: white; 
+    color: #34495e; 
+    border: none;
+    border-radius: 40px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.teacher-list .list-btn:hover{
+    background-color: #a2a7ac;
+}
+
+.teacher-container{
+
+    margin-top: 40px;
+}
+
+.container-table{
+    width: 95%;
+    margin: 0 auto;
+}
+
+.select-teacher {
+    width: 300px;
+    margin: 2opx;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    outline: none;
+    font-size: 16px;
+    transition: border-color 0.3s;
+    
+}
+
+select:hover {
+    border-color: #333;
+}
+
+select:focus {
+    border-color: #007BFF;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+.select-teacher form {
+    text-align: center;
+}
+
+.select-teacher label {
+    display: block;
+    font-weight: bold;
+    color: #f44336;
+}
+
+.select-boxes{
+
+    display: flex;
+    margin-left: 40px;
+    margin-top: 20px;
+    margin-bottom: 40px;
+}
+
+.button-assign {
+    text-align: center; /* Ortala düğmeyi */
+    margin-top: 20px; /* Düğme ile üstteki öğeler arasındaki boşluğu ayarla */
+}
+
+.button-assign .btn {
+    background-color: #34495e; /* Düğme arka plan rengi */
+    color: #fff; /* Düğme metin rengi */
+    padding: 10px 20px; /* Düğme iç içe boşluğunu ayarla */
+    border: none; /* Kenar çizgisi yok */
+    border-radius: 5px; /* Köşeleri yuvarlaştır */
+    cursor: pointer; /* İmleci bir el işareti yap */
+}
+
+.button-assign .btn:hover {
+    background-color: #20303f; /* Fare üzerine geldiğinde düğme rengini değiştir */
+}
+
+.wrapper-table{
+
+    align-items: center;
+    width: 420px;
+    top: 50%;
+    left: 50%;
+    background: #34495e;
+    color: white;
+    padding: 30px 40px;
+    border-radius: 40px;
+}
+
+.class-list table{
+    width: 100%;
+    border-collapse: collapse;
+    border-spacing: 0;
+    border-radius: 40px;
+    margin: auto;
+}
+
+.class-list tr{
+    text-align: center;
+}
+
+.class-list th{
+    padding: 10px;
+    background: #34495e;
+    color: white;
+    font-size: 16px;
+}
+
+.class-list td{
+    padding: 10px;
+    font-size: 16px;
+    border : 1px solid #ffffff;
+}
+
+.table-bordered tr td{
+    text-align: left;
+}
+
+.table-bordered tr th{
+    width: 150px;
+    text-align: left;
+}
+
+.status-box{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: o;
+    font-size: 30px;
+}
+
+.status1 i{
+    color: green;
+}
+
+.status2 i{
+    color: orange;
+}
+
+.status3 i{
+    color: red;
+}
